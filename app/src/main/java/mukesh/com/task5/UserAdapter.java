@@ -47,10 +47,10 @@ public class UserAdapter extends ArrayAdapter<UserInfo> {
         }
 
         UserInfo u = infoArrayAdapter.get(position);
-        holder.userId.setText(String.valueOf(u.getUserID()));
-        holder.id.setText(String.valueOf(u.getId()));
-        holder.title.setText(u.getTitle());
-        holder.body.setText(u.getBody());
+        holder.userId.setText("Userid: " +String.valueOf(u.getUserID()));
+        holder.id.setText("ID: "+String.valueOf(u.getId()));
+        holder.title.setText("Title: "+u.getTitle());
+        holder.body.setText("Body: "+u.getBody());
 
         return contextView;
     }
